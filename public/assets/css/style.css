@@ -5,39 +5,161 @@
 /* ROOT */
 
 :root {
-    --my-color: #123456;
+  /* colors */
+  --blue: #39586f;
+  --lt-gray: #b7c7d4;
+  --md-gray: #7e8489;
+  --dk-gray: #242324;
+  --slate: #585052;
+  --brown: #1f0e0b;
+  --black: #04070d;
+  /* animation */
+  --loop-time: 60s;
+  --img-size: 700px;
+  --img-hw: 340px;
+  /* fonts */
 
 }
 
 /* BASE STYLES */
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 html {
-    padding: 0;
-    margin: 0;
-    height: 100vh;
-    width: 100%;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100%;
 }
 
 body {
-    padding: 0;
-    margin: 0;
-    height: 100vh;
-    width: 100%;
-}s
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  width: 100%;
+  background: url(../img/space.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+}
 
 a {
-    text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
 }
 
 button {
-    border: 0;
+  border: 0;
 }
 
 /* PAGE STYLES */
 
+.world-title {
+  font-size: 2.25rem;
+  color: var(--blue);
+  text-shadow: var(--dk-gray) 2px 2px;
+}
+
+.world-tag {
+  font-size: 1.75rem;
+  color: var(--blue);
+  text-shadow: var(--dk-gray) 2px 2px;
+}
+
+.love-stories {
+    width: 90%;
+    min-height: 5rem;
+    padding: 0;
+    margin: 0;
+    background-color: var(--lt-gray);
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.more-love {
+    flex: 1;
+    margin: 0;
+    padding: .25rem;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.love-text {
+    flex: 4;
+    padding: 1rem;
+    min-height: 5rem;
+}
+
+.love-form {
+  width: 90%;
+  min-height: 5rem;
+  padding: 0.5rem;
+  background-color: var(--lt-gray);
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.love-note {
+  width: 90%;
+}
+
+/* EARTH STYLES */
+
+.earth {
+  width: var(--img-hw);
+  height: var(--img-hw);
+  background: url(https://web.archive.org/web/20150807125159if_/http://www.noirextreme.com/digital/Earth-Color4096.jpg);
+  background-size: var(--img-size);
+  border-radius: 50%;
+  box-shadow: inset 8px 36px 80px 36px rgb(0, 0, 0),
+    inset -6px 0 12px 4px rgba(255, 255, 255, 0.3);
+  animation-name: rotate;
+  animation-duration: var(--loop-time);
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  -webkit-animation-name: rotate;
+  -webkit-animation-duration: var(--loop-time);
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+
+@keyframes rotate {
+  from {
+    background-position: 0px 0px;
+  }
+  to {
+    background-position: var(--img-size) 0px;
+  }
+}
+@-webkit-keyframes rotate {
+  from {
+    background-position: 0px 0px;
+  }
+  to {
+    background-position: var(--img-size) 0px;
+  }
+}
