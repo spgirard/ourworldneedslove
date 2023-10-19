@@ -26,4 +26,12 @@ site mobile template designed for 360 x740 / galaxy S8+
 
 @media screen and (min-width: 80rem) {
   /* @ 1280 */
+  :root {  
+  --title-size: 4rem;
+  --tag-size: 2.75rem;
+  --font-size: 1.75rem;
+  --form-size: 1rem;
+  --icon-size: 4rem;
+  --button-size: 2.25rem;  
+  }  
 }

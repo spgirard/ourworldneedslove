@@ -28,8 +28,35 @@ let lovePhrases = [
     "Love is a sweet melody.",
     "Love is a warm embrace.",
     "Love is the answer to everything.",
-    "Love is the glue that binds us."
+    "Love is the glue that binds us.",
+    "Lilly, I love your smile.",
+    "Lilly, my heart loves you.",
+    "Lilly, your love is my joy.",
+    "Lilly, you are my true love.",
+    "Lilly, love in your eyes.",
+    "Lilly, your love is my strength.",
+    "Lilly, you're my endless love.",
+    "Lilly, love lights your way.",
+    "Lilly, love makes us shine.",
+    "Lilly, love is your name.",
+    "Lilly, love makes life sweet.",
+    "Lilly, love's in the air.",
+    "Lilly, love is our bond.",
+    "Lilly, you're my love song.",
+    "Lilly, my love, my life.",
+    "Lilly, you're my love story.",
+    "Lilly, love in every glance.",
+    "Lilly, love's in every hug.",
+    "Lilly, love's in every word.",
+    "Lilly, love blooms in you.",
+    "Lilly, love's our treasure.",
+    "Lilly, you're my love's home.",
+    "Lilly, my love's devotion.",
+    "Lilly, love's your reflection.",
+    "Lilly, love, pure and true.",
+    "Lilly, you're my forever love."    
   ];
+ 
 
 //   where the text shows
 let loveText = document.getElementById("loveText");
