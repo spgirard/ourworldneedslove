@@ -1,43 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Our World Needs Love</title>
-    <meta name="description" content="A site to record what you love."/>
-    <meta name="author" content="Shawn Girard"/>
+    <meta name="description" content="A site to record what you love." />
+    <meta name="author" content="Shawn Girard" />
     <!-- CSS -->
     <!-- Vendor CSS -->
     <!-- https://github.com/necolas/normalize.css/ -->
-    <link rel="stylesheet" href="./assets/css/vendor/normalize.css">
+    <link rel="stylesheet" href="./assets/css/vendor/normalize.css" />
     <!-- Site CSS -->
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/media.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/media.css" />
     <!-- JS -->
     <!-- Vendor JavaScript -->
     <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/edb58dd1dd.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/edb58dd1dd.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- https://github.com/Modernizr/Modernizr -->
     <script src="./assets/js/vendor/modernizr-3.12.0.min.js"></script>
     <!-- Site JS (deferred) -->
     <script src="./assets/js/site.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <h1 class="world-title">Our World Needs Love</h1>
     <div class="earth" id="earth"></div>
     <p class="world-tag">Take Some</p>
+
+    <!-- existing love notes -->
     <div class="love-stories">
-        <div class="more-love">
-            <i class="fa-solid fa-heart" id="loveButton"></i>
-        </div>
-        <div class="love-text" id="loveText">
-            Sed vitae sem quis mi euismod egestas lobortis vel lorem. Morbi conv.
-        </div>            
+      <div class="icon-love">
+        <i class="fa-solid fa-heart" id="loveButton"></i>
+      </div>
+      <div class="love-text" id="loveText">
+        Sed vitae sem quis mi euismod egestas lobortis vel lorem. Morbi conv.
+      </div>
     </div>
+
+    <!-- new love notes -->
     <p class="world-tag">Leave Some</p>
     <form action="#" method="post" class="love-form">
-        <textarea class="love-note" id="love-note" maxlength="69">
-        </textarea>
+      <textarea class="love-note" id="loveNote" maxlength="69" placeholder="I love...  Love is...  Love can... Love will..."></textarea>
+      <button type="button" onclick="submitForm()" value="submit">Submit</button>
     </form>
-</body>
+  </body>
 </html>
