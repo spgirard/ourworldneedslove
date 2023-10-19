@@ -2,6 +2,8 @@
 
 /* GOOGLE FONTS */
 
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
 /* ROOT */
 
 :root {
@@ -18,7 +20,11 @@
   --img-size: 700px;
   --img-hw: 340px;
   /* fonts */
-
+  --serif: 'Tilt Neon', sans-serif;
+  --title-size: 2rem;
+  --tag-size: 1.75rem;
+  --font-size: 1.5rem;
+  --icon-size: 3rem;
 }
 
 /* BASE STYLES */
@@ -39,12 +45,16 @@ html {
 body {
   padding: 0;
   margin: 0;
+  /* height: 100vh; */
   min-height: 100vh;
   width: 100%;
+  font-family: var(--serif);
+
   background: url(../img/space.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
 
   display: flex;
   flex-direction: column;
@@ -75,34 +85,43 @@ button {
 /* PAGE STYLES */
 
 .world-title {
-  font-size: 2.25rem;
-  color: var(--blue);
-  text-shadow: var(--dk-gray) 2px 2px;
+  margin: 0;
+  padding: .5rem;
+  /* width: 100%; */
+  font-size: var(--title-size);
+  color: var(--lt-gray);
+  text-shadow: var(--blue) 2px 2px;
+  background-color: var(--black);
+  opacity: .5;
 }
 
 .world-tag {
-  font-size: 1.75rem;
-  color: var(--blue);
-  text-shadow: var(--dk-gray) 2px 2px;
+  font-size: var(--tag-size);
+  color: var(--lt-gray);
+  text-shadow: var(--blue) 2px 2px;
+  background-color: var(--black);
+  opacity: .5;
 }
 
 .love-stories {
     width: 90%;
-    min-height: 5rem;
+    min-height: 5.5rem;
     padding: 0;
     margin: 0;
     background-color: var(--lt-gray);
+    opacity: .75;
     border-radius: 0.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: var(--font-size)
 }
 
-.more-love {
+.icon-love {
     flex: 1;
     margin: 0;
     padding: .25rem;
-    font-size: 3rem;
+    font-size: var(--icon-size);
     text-align: center;
 }
 
@@ -110,15 +129,17 @@ button {
     flex: 4;
     padding: 1rem;
     min-height: 5rem;
+    text-wrap: balance;
 }
 
 .love-form {
   width: 90%;
-  min-height: 5rem;
+  min-height: 5.5rem;
   padding: 0.5rem;
   background-color: var(--lt-gray);
   border-radius: 0.5rem;
   display: flex;
+  opacity: .75;
   justify-content: center;
   align-items: center;
 }
@@ -135,12 +156,14 @@ button {
   background: url(https://web.archive.org/web/20150807125159if_/http://www.noirextreme.com/digital/Earth-Color4096.jpg);
   background-size: var(--img-size);
   border-radius: 50%;
-  box-shadow: inset 8px 36px 80px 36px rgb(0, 0, 0),
-    inset -6px 0 12px 4px rgba(255, 255, 255, 0.3);
+  box-shadow: inset 8px 36px 80px 36px var(--black),
+    inset -6px 0 12px 4px var(--blue);
+
   animation-name: rotate;
   animation-duration: var(--loop-time);
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+  
   -webkit-animation-name: rotate;
   -webkit-animation-duration: var(--loop-time);
   -webkit-animation-iteration-count: infinite;

@@ -4,7 +4,6 @@ let text = "Sed vitae sem quis mi euismod egestas lobortis vel lorem. Morbi conv
 let textLength = text.length
 console.log(textLength)
 
-
 // store default phrases
 
 let lovePhrases = [
@@ -50,3 +49,13 @@ function getLoveText() {
     loveText.textContent =  lovePhrases[randNum];
 }
 
+//  love note
+let loveNoteArea = document.getElementById("loveNote");
+
+function submitForm() {
+    let loveNoteText = loveNoteArea.value;
+    // console.log(loveNoteText);
+    loveNoteText.value = '';
+    lovePhrases.push(loveNoteText);
+    // console.log(lovePhrases);
+}
