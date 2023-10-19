@@ -24,7 +24,9 @@
   --title-size: 2rem;
   --tag-size: 1.75rem;
   --font-size: 1.5rem;
+  --form-size: 1rem;
   --icon-size: 3rem;
+  --button-size: 1rem
 }
 
 /* BASE STYLES */
@@ -146,13 +148,17 @@ button {
 }
 
 .love-note {
-  flex: 1;
+  padding: .5rem;
+  border-radius: .5rem;  
+  font-size: var(--form-size);
+  flex: 4;
 }
 
 .submit-love {
-  flex: 0;
+  flex: 1;
+  font-size: var(--button-size);
   padding: .5rem;
-  border-radius: 100%;
+  border-radius: .5rem;
 }
 
 /* EARTH STYLES */
