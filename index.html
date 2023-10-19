@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./assets/css/vendor/normalize.css">
     <!-- Site CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/media.css">
     <!-- JS -->
     <!-- Vendor JavaScript -->
     <!-- Font Awesome -->
@@ -22,9 +23,21 @@
     <script src="./assets/js/site.js" defer></script>
 </head>
 <body>
-
-    <h1>Our world needs love.</h1>
-    <p>Give it some.</p>
-
+    <h1 class="world-title">Our World Needs Love</h1>
+    <div class="earth" id="earth"></div>
+    <p class="world-tag">Take Some</p>
+    <div class="love-stories">
+        <div class="more-love">
+            <i class="fa-solid fa-heart" id="loveButton"></i>
+        </div>
+        <div class="love-text" id="loveText">
+            Sed vitae sem quis mi euismod egestas lobortis vel lorem. Morbi conv.
+        </div>            
+    </div>
+    <p class="world-tag">Leave Some</p>
+    <form action="#" method="post" class="love-form">
+        <textarea class="love-note" id="love-note" maxlength="69">
+        </textarea>
+    </form>
 </body>
 </html>

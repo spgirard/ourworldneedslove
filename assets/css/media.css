@@ -1,0 +1,29 @@
+/* PROJECT MEDIA QUERIES */
+
+/*
+site mobile template designed for 360 x740 / galaxy S8+
+*/
+
+@media screen and (min-width: 25.25rem) {
+  /* @ 404 */
+}
+
+@media screen and (min-width: 30rem) {
+  /* @ 480 */
+}
+
+@media screen and (min-width: 40rem) {
+  /* @ 640 */
+}
+
+@media screen and (min-width: 48rem) {
+  /* @ 768 */
+}
+
+@media screen and (min-width: 64rem) {
+  /* @ 1024 */
+}
+
+@media screen and (min-width: 80rem) {
+  /* @ 1280 */
+}
